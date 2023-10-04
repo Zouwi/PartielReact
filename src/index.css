@@ -1,0 +1,155 @@
+body {
+  margin: 20px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fefae0 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.entete {
+  background: #ccd5ae;
+  padding: 20px;
+  border-radius: 20px;
+  color: #282c34;
+  display: flex;
+  justify-content: space-between;
+}
+
+.entete>div {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+.entete>div>* {
+  color: #282c34;
+  text-decoration: none;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  transition-duration: 0.3s;
+}
+.entete>div>*:hover {
+  background: #d4a373;
+  transition-duration: 0.3s;
+  color: white;
+}
+
+.logo {
+  width: 70px;
+}
+
+.titre {
+  font-family: Antraste;
+  font-size: 30pt;
+  margin: auto;
+  padding: 20px;
+}
+
+.soustitre {
+  font-size: 20pt;
+}
+
+.commentaireBG {
+  background: #ccd5ae;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.commUser {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.contenuContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px;
+}
+
+.commBody {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.leBtn {
+  background: #d4a373;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.leBtn:hover {
+  box-shadow: 5px 5px 0px #ccd5ae;
+  transition-duration: 0.3s;
+
+}
+
+.todoList {
+  background: #d4a373;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.laTodo>* {
+  color: white;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+.numero {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 593px) {
+  body {
+    margin: 10px;
+  }
+
+  .navFlex {
+    display: initial;
+  }
+
+  .entete>div {
+    display: initial;
+    padding: 10px;
+  }
+
+  .entete {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    font-size: 10pt;
+    gap: 8px;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .titre {
+    font-size: 23pt;
+  }
+
+  .soustitre {
+    font-size: 10pt;
+  }
+
+  .contenuContent {
+    margin: 5px;
+  }
+}
